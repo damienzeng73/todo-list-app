@@ -1,36 +1,29 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { List } from 'semantic-ui-react'
-//import PropTypes from 'prop-types'
 
 const _List = (props) => {
-    /*let itemsCollection = _.map(props.items, (element, index) => {
+    let itemsCollection = _.map(props.todos, (element, index) => {
         return (
-            <li key={index}>{element.content}</li>
+            <List.Item key={index}>
+                <List.Icon name='tag' size='large' verticalAlign='middle' />
+                <List.Content>
+                    <List.Description>{element.content}</List.Description>
+                </List.Content>
+            </List.Item>
         )
-    })*/
+    })
 
     return (
         <List id='todo-list' relaxed>
-            <List.Item>
-                <List.Icon name='tag' size='large' verticalAlign='middle' />
-                <List.Content>
-                    <List.Description>test1</List.Description>
-                </List.Content>
-            </List.Item>
-
-            <List.Item>
-                <List.Icon name='tag' size='large' verticalAlign='middle' />
-                <List.Content>
-                    <List.Description>test2</List.Description>
-                </List.Content>
-            </List.Item>
+            {itemsCollection}
         </List>
     )
 }
 
-/*List.propTypes = {
-    items: PropTypes.array.isRequired
-}*/
+List.propTypes = {
+    todos: PropTypes.array.isRequired
+}
 
 
 export default _List
