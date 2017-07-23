@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'semantic-ui-react'
 
 import AddItemForm from '../components/AddItemForm'
 import List from '../components/List'
@@ -6,10 +7,10 @@ import List from '../components/List'
 class ListContainer extends React.Component {
     render() {
         return (
-            <div id='todo-list-container'>
+            <Container id='todo-list-container'>
                 <AddItemForm />
                 <List />
-            </div>
+            </Container>
         )
     }
 }
