@@ -25,13 +25,14 @@ def getTodos():
 def addTodo():
     content = request.json['content']
 
-    mongo.db.todos.insert({
-        'content': content
-    })
-
     todos = []
-    for todo in mongo.db.todos.find():
-        todos.append({'content': todo['content']})
+    if content != '':
+        mongo.db.todos.insert({
+            'content': content
+        })
+
+        for todo in mongo.db.todos.find():
+            todos.append({'content': todo['content']})
 
     response = {}
     response['todos'] = todos
