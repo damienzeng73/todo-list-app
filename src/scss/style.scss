@@ -3,6 +3,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    height: auto !important;
     font-family: 'Bungee', cursive;
 }
 
@@ -19,5 +20,15 @@ html, body {
         color: rgb(184, 59, 94);
         font-size: 3em;
         font-weight: bold;
+    }
+}
+
+#todo-list-container {
+    width: 100%;
+
+    #todo-list {
+        display: table;
+        margin: 200px auto;
+        width: 700px;
     }
 }
