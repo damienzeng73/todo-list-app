@@ -33,7 +33,7 @@ class ListContainer extends React.Component {
     addTodo(content) {
         axios.post('http://localhost:5000/addTodo', {content: content})
             .then((res) => {
-                this.setState({ todos: res.data.todos })
+                this.setState({ todos: res.data.todos, content: '' })
             })
     }
 
