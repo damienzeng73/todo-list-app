@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { Container } from 'semantic-ui-react'
+import { Container, Confirm } from 'semantic-ui-react'
 
 import AddTodoForm from '../components/AddTodoForm'
 import List from '../components/List'
@@ -10,11 +10,15 @@ class ListContainer extends React.Component {
         super(props)
         this.state = {
             content: '',
-            todos: []
+            results: '',
+            todos: [],
+            open: false
         }
 
         this.addTodo = this.addTodo.bind(this)
         this.removeTodo = this.removeTodo.bind(this)
+        this.handleRemoveTodo = this.handleRemoveTodo.bind(this)
+        this.handleOnCancel = this.handleOnCancel.bind(this)
         this.handleOnChange = this.handleOnChange.bind(this)
         this.handleOnSubmit = this.handleOnSubmit.bind(this)
     }
@@ -33,11 +37,19 @@ class ListContainer extends React.Component {
             })
     }
 
-    removeTodo(content) {
-        axios.post('http://localhost:5000/removeTodo', {content: content})
+    removeTodo() {
+        axios.post('http://localhost:5000/removeTodo', {content: this.state.content})
             .then((res) => {
-                this.setState({ todos: res.data.todos })
+                this.setState({ todos: res.data.todos, open: false, content: '' })
             })
+    }
+
+    handleRemoveTodo(content) {
+        this.setState({ open: true, content: content })
+    }
+
+    handleOnCancel() {
+        this.setState({ open: false, content: '' })
     }
 
     handleOnChange(e) {
@@ -60,7 +72,14 @@ class ListContainer extends React.Component {
 
                 <List
                     todos={this.state.todos}
-                    removeTodo={this.removeTodo}
+                    handleRemoveTodo={this.handleRemoveTodo}
+                />
+
+                <Confirm
+                    open={this.state.open}
+                    content={`Do you really want to delete '${this.state.content}' ?`}
+                    onCancel={this.handleOnCancel}
+                    onConfirm={this.removeTodo}
                 />
             </Container>
         )
