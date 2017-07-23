@@ -26,9 +26,17 @@ html, body {
 #todo-list-container {
     width: 100%;
 
+    form {
+        display: table;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #todo-list {
         display: table;
-        margin: 200px auto;
+        margin: 0 auto;
         width: 700px;
     }
 }
