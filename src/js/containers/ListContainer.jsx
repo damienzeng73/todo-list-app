@@ -14,6 +14,7 @@ class ListContainer extends React.Component {
         }
 
         this.addTodo = this.addTodo.bind(this)
+        this.removeTodo = this.removeTodo.bind(this)
         this.handleOnChange = this.handleOnChange.bind(this)
         this.handleOnSubmit = this.handleOnSubmit.bind(this)
     }
@@ -27,6 +28,13 @@ class ListContainer extends React.Component {
 
     addTodo(content) {
         axios.post('http://localhost:5000/addTodo', {content: content})
+            .then((res) => {
+                this.setState({ todos: res.data.todos })
+            })
+    }
+
+    removeTodo(content) {
+        axios.post('http://localhost:5000/removeTodo', {content: content})
             .then((res) => {
                 this.setState({ todos: res.data.todos })
             })
@@ -52,6 +60,7 @@ class ListContainer extends React.Component {
 
                 <List
                     todos={this.state.todos}
+                    removeTodo={this.removeTodo}
                 />
             </Container>
         )

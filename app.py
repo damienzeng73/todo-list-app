@@ -37,6 +37,22 @@ def addTodo():
     response['todos'] = todos
     return jsonify(response)
 
+@app.route('/removeTodo', methods=['POST'])
+def removeTodo():
+    content = request.json['content']
+
+    mongo.db.todos.remove({
+        'content': content
+    })
+
+    todos = []
+    for todo in mongo.db.todos.find():
+        todos.append({'content': todo['content']})
+
+    response = {}
+    response['todos'] = todos
+    return jsonify(response)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

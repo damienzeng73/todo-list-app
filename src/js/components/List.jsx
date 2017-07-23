@@ -5,7 +5,7 @@ import { List } from 'semantic-ui-react'
 const _List = (props) => {
     let itemsCollection = _.map(props.todos, (element, index) => {
         return (
-            <List.Item key={index}>
+            <List.Item key={index} onClick={() => {props.removeTodo(element.content)}}>
                 <List.Icon name='tag' size='large' verticalAlign='middle' />
                 <List.Content>
                     <List.Description>{element.content}</List.Description>
@@ -21,8 +21,9 @@ const _List = (props) => {
     )
 }
 
-List.propTypes = {
-    todos: PropTypes.array.isRequired
+_List.propTypes = {
+    todos: PropTypes.array.isRequired,
+    removeTodo: PropTypes.func.isRequired
 }
 
 
