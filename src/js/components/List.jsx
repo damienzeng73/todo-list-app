@@ -10,7 +10,7 @@ const _List = (props) => {
     })*/
 
     return (
-        <List id='todo-list' divided relaxed>
+        <List id='todo-list' relaxed>
             <List.Item>
                 <List.Icon name='tag' size='large' verticalAlign='middle' />
                 <List.Content>
