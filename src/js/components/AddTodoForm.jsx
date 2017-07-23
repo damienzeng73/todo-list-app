@@ -9,11 +9,11 @@ const AddTodoForm = (props) => {
                 <Form.Input
                     name='content'
                     value={props.content}
-                    placeholder='Add todo ..'
+                    placeholder={`Todo's content ..`}
                     onChange={props.handleOnChange}
                 />
 
-                <Form.Button content='Submit' color='pink' />
+                <Form.Button content='Add' color='pink' />
             </Form.Group>
         </Form>
     )
