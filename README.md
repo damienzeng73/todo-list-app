@@ -42,7 +42,7 @@ Run webpack for generating bundles:
 
     ./node_modules/.bin/webpack --config webpack.config.js
 
-This will create a folder named *static* that contains **main.js** and **main.css**.
+This will create a folder named **static** that contains *main.js* and *main.css*.
 
 Make sure MongoDB is running on your system, you can check its status by typing:
 
