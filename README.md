@@ -32,30 +32,29 @@ Create virtualenv and install all requirements:
 
 Install all needed node_modules:
 
-    npm init
     npm install
 
 or if you using yarn:
 
-    yarn init
     yarn install
 
 Run webpack for generating bundles:
 
     ./node_modules/.bin/webpack --config webpack.config.js
 
-This will create a folder named static that contains main.js and main.css.
+This will create a folder named static that contains **main.js** and **main.css**.
+
 
 Make sure MongoDB is running on your system, you can check its status by typing:
 
     sudo service mongod status
 
-If it's not running, fire it up by:
+If it's not running, fire it up:
 
     sudo service mongod start
 
-Finally, run the server by:
+Finally, run the server:
 
     FLASK_APP=app.py flask run
 
-Fire up browser to `http://localhost:5000`
+Open browser to `http://localhost:5000`
