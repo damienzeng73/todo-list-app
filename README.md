@@ -10,9 +10,11 @@ Use MongoDB to store all todos.
 Dependecies
 -----------
 
-Python3+
+* Python3+
 
-MongoDB
+* Node.js
+
+* MongoDB
 
 How can I try it
 ----------------
