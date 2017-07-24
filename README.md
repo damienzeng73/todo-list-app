@@ -19,41 +19,40 @@ Dependecies
 How can I try it
 ----------------
 
-Clone this repository:
+1. Clone this repository:
 
     git clone https://github.com/damnee562/Todo-list-app.git
 
-Create virtualenv and install all requirements:
+2. Create virtualenv and install all requirements:
 
     python3 -m venv venv_name
     source venv_name/bin/activate
     cd Todo-list-app
     pip install -r requirements.txt
 
-Install all needed node_modules:
+3. Install all needed node_modules:
 
     npm install
 
-or if you using yarn:
+...or if you're using yarn:
 
     yarn install
 
-Run webpack for generating bundles:
+4. Run webpack for generating bundles:
 
     ./node_modules/.bin/webpack --config webpack.config.js
 
-This will create a folder named static that contains **main.js** and **main.css**.
+...This will create a folder named *static* that contains **main.js** and **main.css**.
 
-
-Make sure MongoDB is running on your system, you can check its status by typing:
+5. Make sure MongoDB is running on your system, you can check its status by typing:
 
     sudo service mongod status
 
-If it's not running, fire it up:
+...If it's not running, fire it up:
 
     sudo service mongod start
 
-Finally, run the server:
+6. Finally, run the server:
 
     FLASK_APP=app.py flask run
 
