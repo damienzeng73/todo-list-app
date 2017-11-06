@@ -1,10 +1,7 @@
-A todo list app built with ReactJS, Flask
-=========================================
+Todo-list-app
+=============
 
-Description
------------
-
-This application is using [ReactJS](https://facebook.github.io/react/) and [Semantic-UI-React](https://react.semantic-ui.com/introduction) for building Front-end, [Flask](http://flask.pocoo.org/) for Back-end, [axios](https://github.com/mzabriskie/axios) for calling API.
+This application is a simple To-Do list using ReactJS and Semantic-UI-React for building Front-end, Flask for Back-end, axios for calling API.
 
 Store all todos in MongoDB.
 
@@ -12,9 +9,7 @@ Dependencies
 -----------
 
 * Python3+
-
 * Node.js
-
 * MongoDB
 
 How can I try it
@@ -58,3 +53,11 @@ Finally, run the server:
     FLASK_APP=app.py flask run
 
 Open browser to `http://localhost:5000`
+
+Built With
+----------
+
+* [ReactJS](https://facebook.github.io/react/) - A JavaScript library for building UI
+* [Semantic UI React](https://react.semantic-ui.com/introduction) - A React UI framework
+* [Flask](http://flask.pocoo.org/) - A python web framework
+* [axios](https://github.com/mzabriskie/axios) - A Promised based HTTP client
