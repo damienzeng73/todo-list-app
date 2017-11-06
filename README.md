@@ -3,7 +3,8 @@ A todo list app built with ReactJS, Flask
 
 Description
 -----------
-This application using [ReactJS](https://facebook.github.io/react/) and [Semantic-UI-React](https://react.semantic-ui.com/introduction) for building front-end, [Flask](http://flask.pocoo.org/) for back-end, [axios](https://github.com/mzabriskie/axios) for calling API.
+
+This application is using [ReactJS](https://facebook.github.io/react/) and [Semantic-UI-React](https://react.semantic-ui.com/introduction) for building Front-end, [Flask](http://flask.pocoo.org/) for Back-end, [axios](https://github.com/mzabriskie/axios) for calling API.
 
 Store all todos in MongoDB.
 
