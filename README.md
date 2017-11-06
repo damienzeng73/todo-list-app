@@ -12,8 +12,8 @@ Dependencies
 * Node.js
 * MongoDB
 
-How can I try it
-----------------
+Getting Started
+---------------
 
 Clone this repository:
 
