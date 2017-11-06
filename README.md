@@ -1,9 +1,9 @@
 Todo-list-app
 =============
 
-This application is a simple To-Do list using ReactJS and Semantic-UI-React for building Front-end, Flask for Back-end, axios for calling API.
+A simple To-Do list app built with ReactJS, Flask.
 
-Store all todos in MongoDB.
+All todos stored in MongoDB.
 
 Dependencies
 -----------
