@@ -1,17 +1,14 @@
-Todo-list-app
-=============
+# Todo-list-app
 A simple To-Do list app built with ReactJS, Flask.
 
 All todos stored in MongoDB.
 
-Dependencies
------------
+## Dependencies
 * Python3+
 * Node.js
 * MongoDB
 
-Getting Started
----------------
+## Getting Started
 Clone this repository:
 
     git clone https://github.com/damnee562/todo-list-app.git
@@ -51,8 +48,7 @@ Finally, run the server:
 
 Open browser to `http://localhost:5000`
 
-Built With
-----------
+## Built With
 * [ReactJS](https://facebook.github.io/react/) - A JavaScript library for building UI
 * [Semantic UI React](https://react.semantic-ui.com/introduction) - A React UI framework
 * [Flask](http://flask.pocoo.org/) - A python web framework
