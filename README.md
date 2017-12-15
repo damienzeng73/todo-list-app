@@ -9,6 +9,7 @@ All todos stored in MongoDB.
 * MongoDB
 
 ## Getting Started
+### Installation
 Clone this repository:
 
     git clone https://github.com/damnee562/todo-list-app.git
