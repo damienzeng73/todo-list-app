@@ -14,7 +14,7 @@ Getting Started
 ---------------
 Clone this repository:
 
-    git clone https://github.com/damnee562/Todo-list-app.git
+    git clone https://github.com/damnee562/todo-list-app.git
 
 Create virtualenv and install all requirements:
 
