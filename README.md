@@ -5,7 +5,7 @@ All todos stored in MongoDB.
 
 ## Dependencies
 * Python3+
-* Node.js
+* Node
 * MongoDB
 
 ## Getting Started
