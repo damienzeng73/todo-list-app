@@ -16,7 +16,7 @@ Clone this repository:
 
 Create virtualenv and install all requirements:
 
-    cd todo-list-app
+    cd todo-list-app/
     python3 -m venv venv_name
     source venv_name/bin/activate
     pip install -r requirements.txt
