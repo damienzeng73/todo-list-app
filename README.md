@@ -54,3 +54,6 @@ Open browser to `http://localhost:5000`
 * [Semantic UI React](https://react.semantic-ui.com/introduction) - A React UI framework
 * [Flask](http://flask.pocoo.org/) - A python web framework
 * [axios](https://github.com/mzabriskie/axios) - A Promised based HTTP client
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
