@@ -56,4 +56,4 @@ Open browser to `http://localhost:5000`
 * [axios](https://github.com/mzabriskie/axios) - A Promised based HTTP client
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
