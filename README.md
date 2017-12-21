@@ -1,8 +1,6 @@
 # Todo-list-app
 A simple To-Do list app built with ReactJS, Flask.
 
-All todos stored in MongoDB.
-
 ## Dependencies
 * Python3+
 * Node
@@ -23,17 +21,17 @@ Create virtualenv and install all requirements:
 
 Install all needed node_modules:
 
-    npm install
-
-or if you're using yarn:
-
     yarn install
 
-Run webpack for generating bundles:
+or with npm:
+
+    npm install
+
+Run webpack to generate bundles:
 
     ./node_modules/.bin/webpack --config webpack.config.js
 
-This will create a folder named **static** that contains *main.js* and *main.css*.
+It will create a folder named **static** that contains *main.js* and *main.css*.
 
 Make sure MongoDB is running on your system, you can check its status by typing:
 
@@ -45,7 +43,8 @@ If it's not running, fire it up:
 
 Finally, run the server:
 
-    FLASK_APP=app.py flask run
+    export FLASK_APP=app.py
+    flask run
 
 Open browser to `http://localhost:5000`
 
