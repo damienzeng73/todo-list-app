@@ -1,5 +1,5 @@
 # Todo-list-app
-A simple To-Do list app built with ReactJS, Flask.
+A simple To-Do list app built with React, Flask.
 
 ## Dependencies
 * Python3+
@@ -49,7 +49,7 @@ Finally, run the server:
 Open browser to `http://localhost:5000`
 
 ## Built With
-* [ReactJS](https://facebook.github.io/react/) - A JavaScript library for building UI
+* [React](https://facebook.github.io/react/) - A JavaScript library for building UI
 * [Semantic UI React](https://react.semantic-ui.com/introduction) - A React UI framework
 * [Flask](http://flask.pocoo.org/) - A python web framework
 * [axios](https://github.com/mzabriskie/axios) - A Promised based HTTP client
